@@ -35,4 +35,6 @@ apm install vim-mode\
             autocomplete-go\
             autocomplete-elixir\
             atom-beautify\
+            language-erlang\
+            language-protobuf\
             script
