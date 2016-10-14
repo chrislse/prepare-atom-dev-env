@@ -2,20 +2,6 @@
 
 os=$(uname)
 
-if [ "$os" != "Darwin" ] then
-  echo "The script only support osx"
-fi
-
-if [[ -z $(which brew)]] then
-  echo "installing brew"
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-fi
-
-if [[ -z $(which atom)]] then
-  echo "installing atom"
-  brew install Caskroom/cask/atom
-fi
-
 apm install vim-mode\
             turbo-javascript\
             tester-go\
@@ -37,4 +23,7 @@ apm install vim-mode\
             atom-beautify\
             language-erlang\
             language-protobuf\
+            language-bison-improved\
+            language-bison\
+            trailing-spaces\
             script
